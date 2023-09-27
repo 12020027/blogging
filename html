@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="blogging.css">
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <!-- Navigation menu here -->
+    </header>
+    <main>
+        <article class="post">
+            <h2>Sample Blog Post Title</h2>
+            <p>Published on: <span class="date">January 1, 2023</span></p>
+            <div class="content">
+                <p>This is the content of the blog post.</p>
+            </div>
+        </article>
+        <!-- More blog posts here -->
+    </main>
+    <footer>
+        <p>&copy; 2023 My Blog</p>
+    </footer>
+
+<form action="/create-post" method="POST">
+  <label for="title">Title:</label>
+  <input type="text" id="title" name="title" required>
+  <label for="content">Content:</label>
+  <textarea id="content" name="content" required></textarea>
+  <button type="submit">Publish</button>
+</form>
+
+</body>
+</html>
